@@ -1,0 +1,28 @@
+/* include border and padding size inside html element's dimensions */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* allow app to span full page dimensions */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* NAVBAR */
+
+#masterhead {
+  text-align: center;
+  color: #000000;
+  background: transparent;
+  height: 145px;
+  width: 100%;
+  position: absolute;
+  position: fixed;
+  z-index: 1;
+}
