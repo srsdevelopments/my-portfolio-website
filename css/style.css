@@ -176,23 +176,40 @@ text-align: center;
 /* HOME ABOUT */
 
 
-#homeabout {
-background-image: url("../images/forest.jpeg");
+#photobanner {
+  background-image: url("../images/waterwoods.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+display: grid;
+height: 100%;
+width: 100%;
+}
+
+#transparentbg {
+    display: none;
+}
+#textbg {
+    grid-column: 1 / span 2;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 600px) {
+  #transparentbg {
+      display: block;
+      grid-column: 1;
+  }
+
+  #textbg {
+    grid-column: 2;
+  }
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* FOOTER */
+
+.masterfoot {
+  text-align: center;
+  color: #ffffff;
+  background: #000000;
+}
