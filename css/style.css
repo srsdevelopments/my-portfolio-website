@@ -175,6 +175,10 @@ text-align: center;
 
 /* HOME ABOUT */
 
+#homeabout {
+ width: 100%;
+ height: 50%;
+}
 
 #photobanner {
   background-image: url("../images/waterwoods.jpeg");
@@ -188,6 +192,7 @@ width: 100%;
 #transparentbg {
     display: none;
 }
+
 #textbg {
     grid-column: 1 / span 2;
     background: rgba(255, 255, 255, 0.5);
