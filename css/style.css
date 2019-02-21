@@ -12,6 +12,11 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.masterhead a {
+  color: #ffffff;
 }
 
 /* NAVBAR */
@@ -21,7 +26,7 @@ html, body {
   text-align: center;
   color: #ffffff;
   background: transparent;
-  height: 145px;
+  height: 50px;
   width: 100%;
   position: absolute;
   position: fixed;
@@ -33,9 +38,19 @@ html, body {
     grid-row: 1;
 }
 
+.logo {
+  height: 100%;
+  width: 100%;
+}
+
 .menu2 {
     grid-column: 1;
     grid-row: 2;
+    font-size: 18px;
+}
+
+.menuitem {
+  margin-right: 3%;
 }
 
 @media (min-width: 600px) {
@@ -63,10 +78,16 @@ html, body {
   color: #ffffff;
 }
 
+#home a {
+  color: #ffffff;
+}
+
 #homecont {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+  font-size: 30px;
+  font-family: 'Cormorant', serif;
 }
 
 @media (min-width: 600px) {
@@ -110,8 +131,10 @@ grid-template-columns: auto;
   color: white;
   width: 100%;
   text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-size: 30px;
+  font-family: 'Cormorant', serif;
 }
 
 .portitem {
@@ -136,25 +159,29 @@ grid-template-columns: auto;
 
 #homequote {
 display: grid;
-padding-top: 20%;
-padding-bottom: 20%;
+padding-top: 10%;
+padding-bottom: 10%;
 width: 100%;
 color: #ffffff;
 background: #000000;
 text-align: center;
+padding-left: 5%;
+padding-right: 5%;
+font-size: 30px;
+font-family: 'Cormorant', serif;
 }
 
 #quotetext {
   text-align: left;
   grid-row: 1;
-  grid-column: 1;
+  grid-column: 1 / span 2;
   padding-bottom: 5%;
 }
 
 #quoteref {
-  text-align: left;
+  text-align: right;
   grid-row: 2;
-  grid-column: 1;
+  grid-column: 2;
 }
 
 @media (min-width: 600px) {
@@ -177,16 +204,21 @@ text-align: center;
 
 #homeabout {
  width: 100%;
- height: 50%;
+ height: 85%;
+}
+
+#homeabout a {
+  color: #000000;
 }
 
 #photobanner {
-  background-image: url("../images/waterwoods.jpeg");
+  background-image: url("../images/forest.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 display: grid;
 height: 100%;
 width: 100%;
+grid-template-columns: 50% 50%;
 }
 
 #transparentbg {
@@ -196,6 +228,43 @@ width: 100%;
 #textbg {
     grid-column: 1 / span 2;
     background: rgba(255, 255, 255, 0.5);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#hahead {
+font-size: 30px;
+margin-bottom: 5%;
+font-family: 'Cormorant', serif;
+}
+
+#hapara {
+font-size: 20px;
+margin-bottom: 5%;
+}
+
+#hbtncont {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: 'Cormorant', serif;
+}
+
+#readmorebtn {
+  font-size: 20px;
+  border: solid #000000 2px;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 5%;
+}
+
+#resumebtn {
+font-size: 20px;
+border: solid #000000 2px;
+border-radius: 5px;
+padding: 5px 5px 5px 5px;
 }
 
 @media (min-width: 600px) {
@@ -217,4 +286,43 @@ width: 100%;
   text-align: center;
   color: #ffffff;
   background: #000000;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.foottitle {
+  font-size: 30px;
+  margin-bottom: 5%;
+  font-family: 'Cormorant', serif;
+}
+
+.footpara {
+  font-size: 20px;
+  margin-bottom: 10%;
+}
+
+.breakline {
+  border-bottom: solid #ffffff 2px;
+  width: 50%;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  margin-right: 10%;
+  margin-top: 10%;
+}
+
+.lasticon {
+  height: 50px;
+  width: 50px;
+  margin-top: 10%;
+}
+
+.copyrights {
+  margin-top: 10%;
+  font-size: 20px;
 }
