@@ -23,22 +23,22 @@ function handleScroll(event) {
     landingPageFader.style.backgroundColor = "rgba(255, 255, 255, " + opacity + ")";
 
     for (var i = 0; i < portItems.length; i++) {
-        if (window.scrollY + window.innerHeight > portItems[i].offsetTop) {
+        if (window.scrollY + window.innerHeight > portItems[i].offsetTop + portItems[i].clientHeight / 4) {
             portItems[i].classList.add("visible");
         }
     }
 
-    if (window.scrollY + window.innerHeight > sendMessage.offsetTop) {
+    if (window.scrollY + window.innerHeight > sendMessage.offsetTop + sendMessage.clientHeight) {
         sendMessage.classList.add("visible");
     }
-    if (window.scrollY + window.innerHeight > readMore.offsetTop) {
+    if (window.scrollY + window.innerHeight > readMore.offsetTop + readMore.clientHeight) {
         readMore.classList.add("visible");
     }
-    if (window.scrollY + window.innerHeight > viewResume.offsetTop) {
+    if (window.scrollY + window.innerHeight > viewResume.offsetTop + viewResume.clientHeight) {
         viewResume.classList.add("visible");
     }
     for (var i = 0; i < footIcons.children.length; i++) {
-        if (window.scrollY + window.innerHeight > footIcons.children[i].children[0].offsetTop) {
+        if (window.scrollY + window.innerHeight > footIcons.children[i].children[0].offsetTop + footIcons.children[i].children[0].clientHeight) {
             footIcons.classList.add("visible");
         }
     }

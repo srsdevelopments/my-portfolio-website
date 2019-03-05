@@ -27,16 +27,18 @@ html, body {
   text-align: center;
   color: #ffffff;
   background: transparent;
-  height: 50px;
+  height: 80px;
   width: 100%;
   position: absolute;
   position: fixed;
   z-index: 1;
   transition: linear 0.25s;
+  padding-top: 1%;
 }
 
 .masterhead.scrolled {
   background: black;
+  padding-top: 0%;
 }
 
 
@@ -62,6 +64,10 @@ html, body {
 }
 
 @media (min-width: 600px) {
+.masterhead {
+  height: 50px;
+}
+
   .menu1 {
     height: 85%;
     width: 85%;
@@ -91,8 +97,8 @@ html, body {
   }
 
   .menu2 {
-    font-size: 20px;
-    margin-top: 2%;
+    font-size: 16px;
+    margin-top: 4%;
   }
 
   .menuitem {
@@ -252,17 +258,22 @@ grid-template-columns: auto;
 }
 
 .portitem::after {
-    background: rgba(0, 0, 0, 0.0);
-    content: "";
+    background: rgba(0, 0, 0, 0.25);
+    content: "hi";
     position: absolute;
     margin-left: -300px;
     height: 300px;
     width: 300px;
-    transition: background 1s;
+    transition: background 1s, color 1s;
+    color: rgba(0, 0, 0, 0.0);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portitem:hover::after {
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.0);
+    color: rgba(0, 0, 0, 1);
 }
 
 .portitem {
@@ -270,6 +281,7 @@ grid-template-columns: auto;
     opacity: 0;
     transition: linear 0.5s;
 }
+
 .portitem.visible {
     opacity: 1;
 }
@@ -780,12 +792,17 @@ font-size: 28px;
     padding-bottom: 2.5%;
   }
 
+  .foottitle {
+    font-size: 38px;
+  }
+
   .footpara {
+    font-size: 24px;
     padding-bottom: 2.5%;
   }
 
   .footicons {
-    padding: 12.5% 5% 0% 15%;
+    padding: 10% 5% 0% 15%;
   }
 
   .copyrights {
