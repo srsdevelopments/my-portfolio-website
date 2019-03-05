@@ -32,7 +32,13 @@ html, body {
   position: absolute;
   position: fixed;
   z-index: 1;
+  transition: linear 0.25s;
 }
+
+.masterhead.scrolled {
+  background: black;
+}
+
 
 .menu1 {
     grid-column: 1;
@@ -96,6 +102,27 @@ margin-right: 20px;
   .lastmenuitem {
     margin-right: 30px;
   }
+}
+
+@media (min-width: 1200px) {
+  .menu1 {
+    height: 75%;
+    width: 75%;
+  }
+
+  .menu2 {
+    margin-top: 2.25%;
+    font-size: 16px;
+  }
+
+  .menuitem {
+margin-right: 50px;
+  }
+
+  .lastmenuitem {
+    margin-right: 0px;
+  }
+
 }
 
 /* HOME SECTION */
@@ -169,7 +196,21 @@ font-size: 30px;
 }
 
 @media (min-width: 1200px) {
+
+  #introname {
+font-size: 58px;
+  }
+
+  #introtitle {
+font-size: 32px;
+margin-bottom: 2.25%;
+  }
+
+  #viewworkbtn {
+font-size: 32px;
+  }
 }
+
 
 /* HOME PORTFOLIO */
 
@@ -194,7 +235,7 @@ grid-template-columns: auto;
 
 #homeportbtns {
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   padding-bottom: 10%;
   color: #ffffff;
   background: #000000;
@@ -235,7 +276,7 @@ grid-template-columns: auto;
   }
 
   #homeportbtns {
-    font-size: 24px;
+    font-size: 18px;
     padding-bottom: 7.5%;
   }
 
@@ -252,7 +293,7 @@ grid-template-columns: auto;
   }
 
   #homeportbtns {
-    font-size: 28px;
+    font-size: 22px;
     padding-bottom: 5%;
   }
 }
@@ -260,6 +301,17 @@ grid-template-columns: auto;
 @media (min-width: 1200px) {
   #homeport {
     grid-template-columns: auto auto auto;
+  }
+
+  #homeporttitle {
+    font-size: 38px;
+    padding-top: 2.5%;
+    margin-bottom: 2.5%;
+  }
+
+  #homeportbtns {
+    font-size: 18px;
+    padding-bottom: 2.5%;
   }
 }
 
@@ -334,8 +386,19 @@ font-family: 'Cormorant', serif;
 }
 
 @media (min-width: 1200px) {
+  #homequote {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
 
-}
+  #quotetext {
+    font-size: 38px;
+  }
+
+  #homequotebtn {
+    font-size: 24px;
+  }
+  }
 
 /* HOME ABOUT */
 
@@ -416,7 +479,6 @@ grid-row: 2;
 #textbg {
   padding-top: 7.5%;
   padding-bottom: 7.5%;
-  text-align: left;
 }
 
   #hahead {
@@ -445,6 +507,7 @@ grid-row: 2;
     grid-row: 1;
     grid-column: 2;
   font-size: 24px;
+  margin-bottom: 0%;
   }
 
 }
@@ -464,6 +527,7 @@ grid-row: 2;
     grid-column: 2;
     padding-top: 5%;
     padding-bottom: 5%;
+      text-align: left;
   }
 
   #hahead {
@@ -485,7 +549,31 @@ font-size: 28px;
 }
 
 @media (min-width: 1200px) {
+  #homeabout {
+    height: 55%;
+  }
 
+  #textbg {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+
+    #hahead {
+      font-size: 38px;
+      margin-bottom: 2.5%;
+    }
+
+    #hapara {
+      font-size: 24px;
+    }
+
+    #readmorebtn {
+      font-size: 24px;
+    }
+
+    #resumebtn {
+    font-size: 24px;
+    }
 }
 
 
@@ -505,14 +593,30 @@ font-size: 28px;
 
 .foottitle {
   font-size: 34px;
-  margin-bottom: 5%;
+  padding-bottom: 5%;
   font-family: 'Cormorant', serif;
   font-weight: 700;
 }
 
 .footpara {
   font-size: 20px;
-  margin-bottom: 10%;
+  padding-bottom: 10%;
+  border-bottom: solid #ffffff 1px;
+  width: 100%;
+}
+
+.footicons {
+    display: flex;
+    justify-content: space-around;
+    border-top: solid #ffffff 1px;
+    padding-top: 10%;
+    width: 100%;
+    opacity: 0;
+}
+
+.footicons.visible {
+    opacity: 1;
+    transition: linear 2s;
 }
 
 .breakline {
@@ -523,88 +627,115 @@ font-size: 28px;
 .icon {
   height: 40px;
   width: 40px;
-  margin-right: 10%;
-  margin-top: 10%;
 }
 
 .lasticon {
   height: 40px;
   width: 40px;
-  margin-top: 10%;
 }
 
 .copyrights {
-  margin-top: 10%;
+  padding-top: 10%;
   font-size: 14px;
 }
 
 @media (min-width: 600px) {
-.masterfoot {
-  padding-top: 7.5%;
-  padding-bottom: 7.5%;
-}
+  .masterfoot {
+    padding-top: 7.5%;
+    padding-bottom: 7.5%;
+  }
 
-.foottitle {
-  font-size: 38px;
-}
+  .foottitle {
+    font-size: 38px;
+  }
 
-.footpara {
-  font-size: 24px;
-  margin-bottom: 7.5%;
-}
+  .footpara {
+    font-size: 24px;
+    padding-bottom: 7.5%;
+  }
 
-.icon {
-  height: 50px;
-  width: 50px;
-  margin-top: 7.5%;
-  margin-right: 15%;
-}
+  .icon {
+    height: 50px;
+    width: 50px;
+  }
 
-.lasticon {
-  height: 50px;
-  width: 50px;
-  margin-top: 7.5%;
-}
+  .lasticon {
+    height: 50px;
+    width: 50px;
+  }
 
-.copyrights {
-  font-size: 18px;
-  margin-top: 7.5%;
-}
+  .copyrights {
+    font-size: 18px;
+    padding-top: 7.5%;
+  }
 }
 
 @media (min-width: 900px) {
   .masterfoot {
+    display: grid;
+    grid-template-rows: 64px auto auto;
+    grid-template-columns: 50% 50%;
     padding-top: 5%;
     padding-bottom: 5%;
   }
 
   .foottitle {
+    grid-row: 1;
+    grid-column: 1 / span 2;
     font-size: 42px;
+    padding-bottom: 0%;
   }
 
   .footpara {
+    grid-row: 2;
+    grid-column: 1;
+    border-bottom: none;
+    border-right: solid #ffffff 1px;
+    display: inline-block;
     font-size: 28px;
-    margin-bottom: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    width: 100%;
+    padding-top: 5%;
+    text-align: left;
   }
 
-  .icon {
-    height: 60px;
-    width: 60px;
-    margin-top: 5%;
-  }
-
-  .lasticon {
-    height: 60px;
-    width: 60px;
-    margin-top: 5%;
+  .footicons {
+      grid-row: 2;
+      grid-column: 2;
+      border-top: none;
+      border-left: solid #ffffff 1px;
+      display: inline-flex;
+      grid-template-columns: 50% 50%;
+      padding: 20% 5% 0% 15%;
+      width: 100%;
   }
 
   .copyrights {
-    margin-top: 5%;
-    font-size: 22px;
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    padding-top: 5%;
   }
+
 }
 
 @media (min-width: 1200px) {
+  .masterfoot {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
 
+  .footpara {
+    padding-bottom: 2.5%;
+  }
+
+  .footicons {
+    padding: 12.5% 5% 0% 15%;
+  }
+
+  .copyrights {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    padding-top: 2.5%;
+  }
 }
