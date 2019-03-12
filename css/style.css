@@ -406,7 +406,7 @@ font-family: 'Cormorant', serif;
   font-weight: 700;
 }
 
- a #homequotebtn {
+ #homequotebtn {
   grid-row: 2;
   grid-column: 1;
   font-size: 20px;
@@ -416,11 +416,11 @@ font-family: 'Cormorant', serif;
   padding: 5px 5px 5px 5px;
 }
 
-a #homequotebtn {
+ #homequotebtn {
   color: #ffffff;
 }
 
-a #homequotebtn {
+ #homequotebtn {
   grid-row: 2;
   grid-column: 1;
   font-size: 20px;
@@ -432,7 +432,7 @@ a #homequotebtn {
   transition: linear 1s;
 }
 
-a #homequotebtn.visible {
+ #homequotebtn.visible {
     opacity: 1;
 }
 
@@ -446,7 +446,7 @@ a #homequotebtn.visible {
   font-size: 38px;
 }
 
-a #homequotebtn {
+ #homequotebtn {
   font-size: 24px;
 }
 
@@ -456,13 +456,13 @@ a #homequotebtn {
   #homequote {
     padding-top: 5%;
     padding-bottom: 5%;
-  }
+}
 
   #quotetext {
     font-size: 42px;
   }
 
-  a #homequotebtn {
+   #homequotebtn {
     grid-row: 2;
     grid-column: 2;
     font-size: 28px;
@@ -479,7 +479,7 @@ a #homequotebtn {
     font-size: 38px;
   }
 
-  a #homequotebtn {
+   #homequotebtn {
     font-size: 24px;
   }
   }
@@ -538,7 +538,7 @@ margin-bottom: 5%;
   display: grid;
 }
 
-a #readmorebtn {
+ #readmorebtn {
   font-size: 20px;
   border: solid #000000 2px;
   border-radius: 5px;
@@ -547,7 +547,7 @@ a #readmorebtn {
   grid-row: 1;
 }
 
-a #readmorebtn {
+ #readmorebtn {
   font-size: 20px;
   border: solid #000000 2px;
   border-radius: 5px;
@@ -557,11 +557,11 @@ a #readmorebtn {
   opacity: 0;
   transition: linear 1s;
 }
-a #readmorebtn.visible {
+ #readmorebtn.visible {
     opacity: 1;
 }
 
-a #resumebtn {
+ #resumebtn {
 font-size: 20px;
 border: solid #000000 2px;
 border-radius: 5px;
@@ -569,7 +569,7 @@ padding: 5px 5px 5px 5px;
 grid-row: 2;
 }
 
-a #resumebtn {
+ #resumebtn {
 font-size: 20px;
 border: solid #000000 2px;
 border-radius: 5px;
@@ -579,7 +579,7 @@ opacity: 0;
 transition: linear 1s;
 }
 
-a #resumebtn.visible {
+ #resumebtn.visible {
 opacity: 1;
 }
 
@@ -608,7 +608,7 @@ opacity: 1;
     text-align: center;
   }
 
-  a #readmorebtn {
+   #readmorebtn {
     grid-row: 1;
     grid-column: 1;
     font-size: 24px;
@@ -616,7 +616,7 @@ opacity: 1;
     margin-right: 5%;
   }
 
-  a #resumebtn {
+   #resumebtn {
     grid-row: 1;
     grid-column: 2;
   font-size: 24px;
@@ -651,11 +651,11 @@ opacity: 1;
 font-size: 28px;
   }
 
-  a #readmorebtn {
+  #readmorebtn {
     font-size: 28px;
   }
 
-  a #resumebtn {
+   #resumebtn {
     font-size: 28px;
   }
 
@@ -680,11 +680,11 @@ font-size: 28px;
       font-size: 24px;
     }
 
-    a #readmorebtn {
+     #readmorebtn {
       font-size: 24px;
     }
 
-    a #resumebtn {
+     #resumebtn {
     font-size: 24px;
     }
 }
