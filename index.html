@@ -10,6 +10,27 @@
   </head>
   <body>
 
+    <div id="loadingpage">
+        loading
+    </div>
+    <script type="text/javascript">
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        async function load() {
+            var loadingPage = document.getElementById("loadingpage");
+            loadingPage.innerHTML = "loading";
+            while (loadingPage.style.display != "none") {
+                for (var i = 0; i < 3; i++) {
+                    loadingPage.innerHTML += ".";
+                    await sleep(500);
+                }
+                loadingPage.innerHTML = "loading";
+            }
+        }
+        load();
+    </script>
+
     <header class="masterhead">
 
       <nav class="menu1">
