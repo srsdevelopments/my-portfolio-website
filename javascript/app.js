@@ -34,32 +34,34 @@ window.onload = async function() {
     homeAbout.style.display = "none";
     footer.style.display = "none";
 
-    await sleep(5000);
     navBar.style.opacity = 0;
     for (var i = 0; i < 3; i++) {
         homeElements[i].style.opacity = 0;
     }
+
+    await sleep(1000);
     loadingPage.style.opacity = 0;
+
     await sleep(1000);
     loadingPage.style.display = "none";
 
     for (var i = 0; i < 3; i++) {
         homeElements[i].style.transition = "opacity 1s";
     }
-    navBar.style.opacity = 1;
-    await sleep(1000);
 
+    navBar.style.opacity = 1;
+    await sleep(500);
     for (var i = 0; i < 3; i++) {
         homeElements[i].style.opacity = 1;
         await sleep(500);
     }
 
-    portTitle.style.display = "block";
-    portButtons.style.display = "block";
-    homePort.style.display = "grid";
-    homeQuote.style.display = "grid";
-    homeAbout.style.display = "block";
-    footer.style.display = "grid";
+    portTitle.style.display = "";
+    portButtons.style.display = "";
+    homePort.style.display = "";
+    homeQuote.style.display = "";
+    homeAbout.style.display = "";
+    footer.style.display = "";
 
 }
 function handleScroll(event) {
