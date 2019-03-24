@@ -27,12 +27,12 @@ function sleep(ms) {
 }
 
 window.onload = async function() {
-    portTitle.style.display = "none";
-    portButtons.style.display = "none";
-    homePort.style.display = "none";
-    homeQuote.style.display = "none";
-    homeAbout.style.display = "none";
-    footer.style.display = "none";
+    // portTitle.style.display = "none";
+    // portButtons.style.display = "none";
+    // homePort.style.display = "none";
+    // homeQuote.style.display = "none";
+    // homeAbout.style.display = "none";
+    // footer.style.display = "none";
 
     navBar.style.opacity = 0;
     for (var i = 0; i < 3; i++) {
