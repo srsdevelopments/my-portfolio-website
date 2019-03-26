@@ -188,6 +188,7 @@ margin-right: 20px;
     margin-right: 30px;
   }
 }
+
 @media (min-width: 1200px) {
   .menu2 {
     margin-top: .35%;
@@ -197,10 +198,7 @@ margin-right: 20px;
   .menuitem {
 margin-right: 50px;
   }
-
 }
-
-
 
 /* HOME SECTION */
 
@@ -461,13 +459,14 @@ font-family: 'Cormorant', serif;
 
 #quotetext {
   font-size: 32px;
+  padding-bottom: 0%;
 }
 
  #homequotebtn {
   font-size: 18px;
-  grid-row: 2;
+  grid-row: 1;
   grid-column: 2;
-  width: 90%;
+  width: 100%;
 }
 
 }
@@ -485,7 +484,6 @@ font-family: 'Cormorant', serif;
    #homequotebtn {
     font-size: 18px;
     width: 70%;
-    /* margin-left: 20%; */
   }
 }
 
@@ -501,7 +499,6 @@ font-family: 'Cormorant', serif;
 
    #homequotebtn {
     font-size: 20px;
-    /* margin-left: 15%; */
   }
   }
 
@@ -706,7 +703,7 @@ font-size: 18px;
 
 .foottitle {
   font-size: 30px;
-  padding-bottom: 5%;
+  margin-bottom: 5%;
   font-family: 'Cormorant', serif;
   font-weight: 700;
 }
@@ -788,7 +785,7 @@ font-size: 18px;
 }
 
 @media (min-width: 900px) {
-  .masterfoot {
+  /* .masterfoot {
     display: grid;
     grid-template-rows: 64px auto auto;
     grid-template-columns: 50% 50%;
@@ -842,6 +839,39 @@ font-size: 18px;
   .lasticon {
     height: 40px;
     width: 40px;
+  } */
+
+  .masterfoot {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .foottitle {
+    font-size: 32px;
+  }
+
+  .footpara {
+    font-size: 18px;
+    padding-bottom: 5%;
+  }
+
+  .footicons {
+    padding-top: 5%;
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .lasticon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .copyrights {
+    font-size: 14px;
+    padding-top: 5%;
   }
 
 }
@@ -862,7 +892,7 @@ font-size: 18px;
   }
 
   .footicons {
-    padding: 8% 5% 0% 15%;
+    padding-top: 2.5%;
   }
 
   .copyrights {
