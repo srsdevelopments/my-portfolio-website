@@ -11,7 +11,9 @@
   <body>
 
     <div id="loadingpage">
-        loading
+      <div id="loadingtext">
+        LOADING
+      </div>
     </div>
     <script type="text/javascript">
         function sleep(ms) {
@@ -19,13 +21,14 @@
         }
         async function load() {
             var loadingPage = document.getElementById("loadingpage");
-            loadingPage.innerHTML = "loading";
+            var loadingText = document.getElementById("loadingtext");
+            loadingText.innerHTML = "LOADING";
             while (loadingPage.style.display != "none") {
                 for (var i = 0; i < 3; i++) {
-                    loadingPage.innerHTML += ".";
+                    loadingText.innerHTML += ".";
                     await sleep(500);
                 }
-                loadingPage.innerHTML = "loading";
+                loadingText.innerHTML = "LOADING";
             }
         }
         load();
@@ -104,7 +107,8 @@
   <div id="quotetext">Like what you see?</div>
 
 
-<a href="mailto:stevenrichardshirley@gmail.com" id="homequotebtn"><div>SEND ME A MESSAGE</div></a>
+<a href="mailto:stevenrichardshirley@gmail.com" id="homequotebtn">SEND ME A MESSAGE</a>
+
 
 </section>
 

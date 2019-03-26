@@ -27,12 +27,12 @@ function sleep(ms) {
 }
 
 window.onload = async function() {
-    // portTitle.style.display = "none";
-    // portButtons.style.display = "none";
-    // homePort.style.display = "none";
-    // homeQuote.style.display = "none";
-    // homeAbout.style.display = "none";
-    // footer.style.display = "none";
+    portTitle.style.display = "none";
+    portButtons.style.display = "none";
+    homePort.style.display = "none";
+    homeQuote.style.display = "none";
+    homeAbout.style.display = "none";
+    footer.style.display = "none";
 
     navBar.style.opacity = 0;
     for (var i = 0; i < 3; i++) {
@@ -54,6 +54,16 @@ window.onload = async function() {
     for (var i = 0; i < 3; i++) {
         homeElements[i].style.opacity = 1;
         await sleep(500);
+    }
+
+    for (var i = 0; i < portItems.length; i++) {
+        portItems[i].classList.remove("visible");
+    }
+    sendMessage.classList.remove("visible");
+    readMore.classList.remove("visible");
+    viewResume.classList.remove("visible");
+    for (var i = 0; i < footIcons.children.length; i++) {
+        footIcons.classList.remove("visible");
     }
 
     portTitle.style.display = "";

@@ -23,13 +23,21 @@ a:hover {
 #loadingpage {
     z-index: 1000;
     position: absolute;
-    background-color: white;
+    background-color: black;
     font-size: 24px;
     text-align: center;
     width: 100%;
     height: 100%;
-    padding: 33% 50%;
     transition: opacity 1s;
+    color: white;
+    display: table;
+}
+
+#loadingtext {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;
 }
 
 /* BUTTONS */
@@ -191,7 +199,7 @@ margin-right: 20px;
 
 @media (min-width: 1200px) {
   .menu2 {
-    margin-top: .35%;
+    margin-top: .2%;
     font-size: 16px;
   }
 
@@ -383,6 +391,7 @@ grid-template-columns: auto;
   #homeporttitle {
     font-size: 32px;
     padding-top: 5%;
+    margin-bottom: 2.5%;
   }
 
   #homeportbtns {
@@ -458,11 +467,13 @@ font-family: 'Cormorant', serif;
 }
 
 #quotetext {
+  line-height: 40px;
   font-size: 32px;
   padding-bottom: 0%;
 }
 
  #homequotebtn {
+   line-height: 36px;
   font-size: 18px;
   grid-row: 1;
   grid-column: 2;
@@ -601,6 +612,7 @@ opacity: 1;
 
   #hbtncont {
     text-align: center;
+    grid-column-gap: 5%;
   }
 
    #readmorebtn {
@@ -608,7 +620,6 @@ opacity: 1;
     grid-column: 1;
     font-size: 18px;
     margin-bottom: 0%;
-    margin-right: 5%;
   }
 
    #resumebtn {
@@ -639,6 +650,7 @@ opacity: 1;
   }
 
   #hahead {
+    margin-bottom: 2.5%;
     font-size: 32px;
   }
 
@@ -716,8 +728,6 @@ font-size: 18px;
 }
 
 .footicons {
-    display: flex;
-    justify-content: space-around;
     border-top: solid #ffffff 1px;
     padding-top: 10%;
     width: 100%;
@@ -735,6 +745,7 @@ font-size: 18px;
 }
 
 .icon {
+  margin-right: 15%;
   height: 30px;
   width: 30px;
 }
@@ -769,6 +780,7 @@ font-size: 18px;
   }
 
   .icon {
+    margin-right: 12.5%;
     height: 35px;
     width: 35px;
   }
@@ -848,6 +860,7 @@ font-size: 18px;
 
   .foottitle {
     font-size: 32px;
+    margin-bottom: 2.5%;
   }
 
   .footpara {
@@ -862,6 +875,7 @@ font-size: 18px;
   .icon {
     height: 40px;
     width: 40px;
+    margin-right: 7.5%;
   }
 
   .lasticon {
@@ -884,6 +898,7 @@ font-size: 18px;
 
   .foottitle {
     font-size: 34px;
+    margin-bottom: 2.5%;
   }
 
   .footpara {
@@ -895,9 +910,11 @@ font-size: 18px;
     padding-top: 2.5%;
   }
 
+  .icon {
+    margin-right: 7.5%;
+  }
+
   .copyrights {
-    grid-row: 3;
-    grid-column: 1 / span 2;
     padding-top: 2.5%;
   }
 }
