@@ -31,6 +31,7 @@ a:hover {
     transition: opacity 1s;
     color: white;
     display: table;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #loadingtext {
@@ -429,15 +430,30 @@ background: #000000;
 text-align: center;
 padding-left: 5%;
 padding-right: 5%;
-font-family: 'Cormorant', serif;
+}
+
+#quotecont {
+grid-row: 1;
+grid-column: 1;
 }
 
 #quotetext {
-  grid-row: 1;
-  grid-column: 1;
-  padding-bottom: 5%;
+  font-family: 'Cormorant', serif;
+  margin-bottom: 5%;
   font-size: 30px;
   font-weight: 700;
+}
+
+#quotetext2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin-bottom: 5%;
+}
+
+#homequotebtncont {
+  text-align: center;
+  grid-row: 2;
+  grid-column: 1;
 }
 
  #homequotebtn {
@@ -445,8 +461,6 @@ font-family: 'Cormorant', serif;
 }
 
  #homequotebtn {
-  grid-row: 2;
-  grid-column: 1;
   font-size: 16px;
   border: solid #ffffff 2px;
   font-family: 'Montserrat', sans-serif;
@@ -466,17 +480,31 @@ font-family: 'Cormorant', serif;
   padding-bottom: 7.5%;
 }
 
+#quotecont {
+  grid-row: 1;
+  grid-column: 1;
+}
+
 #quotetext {
   line-height: 40px;
   font-size: 32px;
-  padding-bottom: 0%;
+  margin-bottom: 5%;
+}
+
+#quotetext2 {
+font-size: 18px;
+margin-bottom: 5%;
+}
+
+#homequotebtncont {
+  grid-row: 2;
+  grid-column: 1;
+  width: 100%;
 }
 
  #homequotebtn {
    line-height: 36px;
   font-size: 18px;
-  grid-row: 1;
-  grid-column: 2;
   width: 100%;
 }
 
@@ -488,13 +516,28 @@ font-family: 'Cormorant', serif;
     padding-bottom: 5%;
 }
 
+#quotecont {
+  text-align: left;
+  grid-row: 1;
+  grid-column: 1;
+}
+#homequotebtncont {
+  grid-row: 2;
+  grid-column: 2;
+}
+
   #quotetext {
     font-size: 32px;
+    margin-bottom: 2.5%;
+  }
+
+  #quotetext2 {
+    font-size: 18px;
   }
 
    #homequotebtn {
     font-size: 18px;
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -506,6 +549,11 @@ font-family: 'Cormorant', serif;
 
   #quotetext {
     font-size: 34px;
+    margin-bottom: 2.5%;
+  }
+
+  #quotetext2 {
+    font-size: 20px;
   }
 
    #homequotebtn {

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Steven Shirley - UI/UX Designer | Front-end Web Developer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:300,400|Montserrat:200,400" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="loadingpage">
+      <div id="loadingtext">
+        LOADING
+      </div>
+    </div>
+    <script type="text/javascript">
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        async function load() {
+            var loadingPage = document.getElementById("loadingpage");
+            var loadingText = document.getElementById("loadingtext");
+            loadingText.innerHTML = "LOADING";
+            while (loadingPage.style.display != "none") {
+                for (var i = 0; i < 3; i++) {
+                    loadingText.innerHTML += ".";
+                    await sleep(500);
+                }
+                loadingText.innerHTML = "LOADING";
+            }
+        }
+        load();
+    </script>
+
+    <header class="masterhead">
+
+      <nav class="menu1">
+          <a href="index.html" id="mainlogo" class=""><img class="logo" src="./images/my-logo.png"></a>
+      </nav>
+
+<nav class="menu2">
+  <a href="index.html" class="menuitem">HOME</a>
+  <a href="about.html" class="menuitem" style="color: #4195F5;" >ABOUT</a>
+  <a href="portfolio.html" class="menuitem">PORTFOLIO</a>
+  <a href="mailto:stevenrichardshirley@gmail.com" class="lastmenuitem">CONTACT</a>
+  </nav>
+
+  </header>
+
+<section id="mainabout">
+
+<div id="picntext">
+
+<div id="aboutpic">
+
+</div>
+
+<div id="abouttext">
+
+</div>
+
+</div>
+
+<section id="skillscont">
+  <p class="titlecont"><strong>MY</strong> <strong class="bluetext">SKILLS</strong></p>
+  <br>
+  <div class="container" id="skillssubcont">
+  <div class="row">
+    <div class="col-4" id="descont">
+      <div>
+      <p class="s2ps">DESIGN</p>
+      <br>
+      <br>
+      <p class="s3ps">Precise eye for <span class="bluetext">UI/UX.</span></p>
+      <br>
+      <p class="s3ps">Functional layout and content.</p>
+      <br>
+      <p class="s3ps">User interaction and typography.</p>
+      </div>
+      </div>
+        <div class="col-4" id="skillscontpic">
+          <div data-aos="fade" data-aos-easing="ease-in-sine">
+            <div id="skillscontbluebg">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-lg-4">
+                <img class="logos" src="./images/html5logo.png">
+                <p class="logosp">HTML5</p>
+              </div>
+              <div class="col-sm-12 col-lg-4">
+                <img class="logos" src="./images/css3logo.png">
+                <p class="logosp">CSS3</p>
+              </div>
+              <div class="col-sm-12 col-lg-4">
+                <img class="logos" src="./images/javascriptlogo.png">
+                <p class="logosp">JavaScript</p>
+              </div>
+            </div>
+            <div class="row">
+            <div class="col-sm-12 col-lg-4">
+              <img class="logos" src="./images/ailogo.png">
+              <p class="logosp">Illustrator</p>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <img class="logos" id="specialskill" src="./images/pencillogo.png">
+              <p class="logosp">Prototyping</p>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <img class="logos" src="./images/pslogo.png">
+              <p class="logosp">Photoshop</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-lg-4">
+              <img class="logos" src="./images/bootstraplogo.png">
+              <p class="logosp">Bootstrap</p>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <img class="logos" src="./images/reactlogo.png">
+              <p class="logosp">ReactJS</p>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <img class="logos" src="./images/gitlogo.png">
+              <p class="logosp">Git</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+      <div class="col-4" id="devcont">
+        <div>
+        <p class="s2ps">DEVELOPMENT</p>
+        <br>
+        <br>
+        <p class="s3ps">Sharp mind for front-end.</p>
+        <br>
+        <p class="s3ps">Cross-platform responsiveness.</p>
+        <br>
+        <p class="s3ps">Clean and efficient code.</p>
+        </div>
+      </div>
+        </div>
+      </div>
+</section>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="masterfoot">
+
+    <div class="foottitle">Okay, let's create something great.</div>
+  <div class="footpara">When you have a project that you want to get started, connect with me. I'm available for freelance work, and I'm eager to hear from you.</div>
+
+    <div class="footicons">
+
+      <a href="mailto:stevenrichardshirley@gmail.com"><img class="icon" src="./images/mail-icon.png"></a>
+        <a href=""><img class="icon" src="./images/behance-icon.png"></a>
+          <a href="https://github.com/srsdevelopments"><img class="icon" src="./images/github-icon.png"></a>
+            <a href="https://www.linkedin.com/in/stevenrichardshirley/"><img class="lasticon" src="./images/linkedin-icon.png"></a>
+
+    </div>
+
+    <div class="copyrights">
+      © 2019 - STEVEN SHIRLEY - ALL RIGHTS RESERVED
+    </div>
+
+    </section>
+
+    <script src="./javascript/app.js"></script>
+
+    </body>
+  </html>
