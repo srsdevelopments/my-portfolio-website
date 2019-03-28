@@ -966,3 +966,58 @@ font-size: 18px;
     padding-top: 2.5%;
   }
 }
+
+/* ABOUT PAGE */
+
+.s2ps {
+  font-size: 30px;
+  font-family: 'Cormorant', serif;
+}
+
+.s3ps {
+font-size: 16px;
+}
+
+#skillscont {
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#descont {
+  text-align: left;
+  margin-top: 25%;
+}
+
+#descont p {
+  margin-bottom: 50%;
+}
+
+#skillscontbluebg {
+  height: 100%;
+  margin-top: 30%;
+  padding-top: 10%;
+  background-color: #1C4D8D;
+  text-align: center;
+  border: solid 3px #000000;
+  border-radius: 7px;
+}
+
+#specialskill {
+  margin-left: 10%;
+}
+
+.logosp {
+  color: #000000;
+}
+
+#devcont {
+  text-align: right;
+  margin-top: 25%;
+}
+
+#devcont p {
+  margin-bottom: 50%;
+}
