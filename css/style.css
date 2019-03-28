@@ -41,6 +41,12 @@ a:hover {
   height: 100%;
 }
 
+.titlepic {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
 /* BUTTONS */
 
 .menu2 a {
@@ -969,9 +975,22 @@ font-size: 18px;
 
 /* ABOUT PAGE */
 
-.s2ps {
+#aboutpagepic {
+  background-image: url("../images/waterwoods-edit.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.s1ps {
   font-size: 30px;
   font-family: 'Cormorant', serif;
+}
+
+
+.s2ps {
+  font-size: 18px;
 }
 
 .s3ps {
