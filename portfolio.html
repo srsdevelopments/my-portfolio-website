@@ -8,31 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant:300,400|Montserrat:200,400" rel="stylesheet">
   </head>
-  <body>
-
-    <!-- <div id="loadingpage">
-      <div id="loadingtext">
-        LOADING
-      </div>
-    </div>
-    <script type="text/javascript">
-        function sleep(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
-        }
-        async function load() {
-            var loadingPage = document.getElementById("loadingpage");
-            var loadingText = document.getElementById("loadingtext");
-            loadingText.innerHTML = "LOADING";
-            while (loadingPage.style.display != "none") {
-                for (var i = 0; i < 3; i++) {
-                    loadingText.innerHTML += ".";
-                    await sleep(500);
-                }
-                loadingText.innerHTML = "LOADING";
-            }
-        }
-        load();
-    </script> -->
+  <body style="opacity: 0; transition: opacity 2s">
 
     <header class="masterhead">
 
@@ -41,18 +17,21 @@
       </nav>
 
 <nav class="menu2">
-  <a href="index.html" class="menuitem" style="color: #4195F5;">HOME</a>
+  <a href="index.html" class="menuitem">HOME</a>
   <a href="about.html" class="menuitem">ABOUT</a>
-  <a href="portfolio.html" class="menuitem">PORTFOLIO</a>
+  <a href="portfolio.html" class="menuitem" style="color: #4195F5;">PORTFOLIO</a>
   <a href="mailto:stevenrichardshirley@gmail.com" class="lastmenuitem">CONTACT</a>
   </nav>
 
   </header>
 
-  <div id="homeporttitle">
-    Hand crafted experiences for the digital world.
+  <div class="titlepic" id="aboutpagepic">
+
+    <div class="titletext">Project Gallery</div>
+
   </div>
-  <div id="homeportbtns">
+
+  <div id="specialhomeportbtns">
     <a href="">DESIGN</a> |
     <a href="">DEVELOPMENT</a> |
     <a href="">ART</a> |
@@ -108,7 +87,7 @@
 
     </section>
 
-    <!-- <script src="./javascript/app.js"></script> -->
+    <script src="./javascript/app3.js"></script>
 
     </body>
   </html>
