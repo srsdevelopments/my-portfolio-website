@@ -355,18 +355,24 @@ grid-template-columns: auto;
     width: 100%;
 }
 
+.portitem img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .portitem::after {
     background: rgba(0, 0, 0, 0.25);
     content: "hi";
     position: absolute;
-    margin-left: -300px;
-    height: 300px;
-    width: 300px;
     transition: background 1s, color 1s;
     color: rgba(0, 0, 0, 0.0);
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-left: -100%;
 }
 
 .portitem:hover::after {
@@ -421,7 +427,7 @@ grid-template-columns: auto;
 
 @media (min-width: 1200px) {
   #homeport {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 50% 50%;
   }
 
   #homeporttitle {
