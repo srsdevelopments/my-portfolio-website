@@ -7,8 +7,8 @@ var landingPageFader = document.getElementById("homecont");
 
 var portItems = document.getElementsByClassName("portitem");
 var sendMessage = document.getElementById("homequotebtn");
-var readMore = document.getElementById("readmorebtn");
-var viewResume = document.getElementById("resumebtn");
+var readMore = document.getElementByClassName("readmorebtn");
+var viewResume = document.getElementByClassName("resumebtn");
 var footIcons = document.getElementsByClassName("footicons")[0];
 
 var loadingPage = document.getElementById("loadingpage");
