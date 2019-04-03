@@ -399,12 +399,12 @@ grid-auto-rows: 400px;
 
   #homeporttitle {
     font-size: 32px;
-    padding-top: 7.5%;
+    padding-top: 5%;
   }
 
   #homeportbtns {
     font-size: 16px;
-    padding-bottom: 7.5%;
+    padding-bottom: 5%;
   }
 
 }
@@ -475,12 +475,6 @@ grid-column: 1;
   margin-bottom: 5%;
 }
 
-#homequotebtncont {
-  text-align: center;
-  grid-row: 2;
-  grid-column: 1;
-}
-
  #homequotebtn {
   color: #ffffff;
 }
@@ -493,6 +487,8 @@ grid-column: 1;
   padding: 5px 5px 5px 5px;
   opacity: 0;
   width: 100%;
+  grid-row: 2;
+  grid-column: 1;
 }
 
  #homequotebtn.visible {
@@ -501,8 +497,8 @@ grid-column: 1;
 
 @media (min-width: 600px) {
 #homequote {
-  padding-top: 7.5%;
-  padding-bottom: 7.5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #quotecont {
@@ -520,11 +516,6 @@ font-size: 18px;
 margin-bottom: 5%;
 }
 
-#homequotebtncont {
-  grid-row: 2;
-  grid-column: 1;
-  width: 100%;
-}
 
  #homequotebtn {
   font-size: 18px;
@@ -537,16 +528,13 @@ margin-bottom: 5%;
   #homequote {
     padding-top: 5%;
     padding-bottom: 5%;
+    grid-template-columns: 65% 35%;
 }
 
 #quotecont {
   text-align: left;
   grid-row: 1;
   grid-column: 1;
-}
-#homequotebtncont {
-  grid-row: 2;
-  grid-column: 2;
 }
 
   #quotetext {
@@ -559,6 +547,8 @@ margin-bottom: 5%;
   }
 
    #homequotebtn {
+     grid-row: 2;
+     grid-column: 2;
     font-size: 18px;
     width: 100%;
   }
@@ -568,6 +558,7 @@ margin-bottom: 5%;
   #homequote {
     padding-top: 2.5%;
     padding-bottom: 2.5%;
+    grid-template-columns: 65% 35%;
   }
 
   #quotetext {
@@ -627,7 +618,10 @@ font-weight: 700;
 
 .hapara {
 font-size: 16px;
-margin-bottom: 5%;
+}
+
+#hapara2 {
+  margin-bottom: 5%;
 }
 
 #hbtncont {
@@ -648,6 +642,16 @@ opacity: 0;
 opacity: 1;
 }
 
+.textbg2 {
+    grid-column: 1 / span 2;
+    background: rgba(255, 255, 255, 0.5);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 
 @media (min-width: 600px) {
 .homeabout {
@@ -655,8 +659,13 @@ opacity: 1;
 }
 
 .textbg {
-  padding-top: 7.5%;
-  padding-bottom: 7.5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.textbg2 {
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
   .hahead {
@@ -698,6 +707,13 @@ opacity: 1;
       text-align: left;
   }
 
+  .textbg2 {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    grid-column: 1;
+    text-align: left;
+  }
+
   .hahead {
     margin-bottom: 2.5%;
     font-size: 32px;
@@ -723,6 +739,11 @@ font-size: 18px;
   .textbg {
     padding-top: 2.5%;
     padding-bottom: 2.5%;
+  }
+
+  .textbg2 {
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
   }
 
     .hahead {
@@ -804,8 +825,8 @@ font-size: 18px;
 
 @media (min-width: 600px) {
   .masterfoot {
-    padding-top: 7.5%;
-    padding-bottom: 7.5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 
   .foottitle {
@@ -814,11 +835,11 @@ font-size: 18px;
 
   .footpara {
     font-size: 18px;
-    padding-bottom: 7.5%;
+    padding-bottom: 5%;
   }
 
   .footicons {
-    padding-top: 7.5%;
+    padding-top: 5%;
   }
 
   .icon {
@@ -834,7 +855,7 @@ font-size: 18px;
 
   .copyrights {
     font-size: 14px;
-    padding-top: 7.5%;
+    padding-top: 5%;
   }
 }
 
@@ -990,11 +1011,17 @@ padding-bottom: 10%;
 
 .skillitem {
   text-align: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.skillitem.visible {
+  opacity: 1;
 }
 
 .skillslogo {
-  height: 150px;
-  width: 150px;
+  height: 125px;
+  width: 125px;
 }
 
 .logostext {

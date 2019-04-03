@@ -57,7 +57,7 @@
 
 <div id="introtitle">DIGITAL DESIGNER | FRONT-END DEVELOPER</div>
 
-<div><a href="portfolio.html" id="viewworkbtn">VIEW PROJECT GALLERY</a></div>
+<div><a href="#homeporttitle" id="viewworkbtn">VIEW PROJECT GALLERY</a></div>
 
 </div>
 
@@ -93,9 +93,8 @@
 
 </div>
 
-<div id="homequotebtncont">
-<a href="mailto:stevenrichardshirley@gmail.com" id="homequotebtn">SEND ME A MESSAGE</a>
-</div>
+<a href="mailto:stevenrichardshirley@gmail.com" id="homequotebtn"><div>SEND ME A MESSAGE</div></a>
+
 
 </section>
 
@@ -113,7 +112,7 @@
       </div>
 
       <div class="hapara">
-        I focus on research and user validation, analyzing and solving, designing and developing, evaluating and learning. Everyday, I refine my work procedure using different methodologies.
+        I focus on research and user validation, analyzing and solving, designing and developing, evaluating and learning. Everyday, I refine my work procedure using different methodologies. Whether it be an Agile, Scrum, Lean - I use components from all methodologies, in order to get the most out of each one.
         </div>
 
   </div>
@@ -205,13 +204,13 @@
     <div class="transparentbg">
     </div>
 
-    <div class="textbg">
+    <div class="textbg2">
 
       <div class="hahead">
-        My workflow is defined by finding creative solutions, then building a product.
+        Born in the Bayou, raised in the Lone Star State.
       </div>
 
-      <div class="hapara">
+      <div class="hapara" id="hapara2">
         I focus on research and user validation, analyzing and solving, designing and developing, evaluating and learning. When I'm not crushing code or pushing pixels, you'll find me drumming, illustrating, or embarking on an adventure.
         </div>
 
@@ -244,6 +243,21 @@
   </section>
 
   <script src="./javascript/app.js"></script>
+
+  <script>
+  $('a[href*="#"]').click(function(event) {
+                  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                      var target = $(this.hash);
+                      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                      if (target.length) {
+                          event.preventDefault();
+                          $('html, body').animate({
+                          scrollTop: target.offset().top
+                          }, 1000);
+                      }
+                  }
+              });
+              </script>
 
   </body>
 </html>
