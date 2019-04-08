@@ -13,11 +13,11 @@ var portTitle = document.getElementById("homeporttitle");
 var portButtons = document.getElementById("homeportbtns");
 var homePort = document.getElementById("homeport");
 var homeQuote = document.getElementById("homequote");
-var homeAbout = document.getElementsByClassName("homeabout")[0];
+var homeAbout = document.getElementById("homeabout1");
 var skillTitle = document.getElementById("skillstitle1");
 var skillSubTitle = document.getElementById("skillstitle2");
 var skills = document.getElementById("skillscontainer");
-var otherHomeAbout = document.getElementsByClassName("homeabout")[1];
+var otherHomeAbout = document.getElementById("homeabout2");
 var footer = document.getElementsByClassName("masterfoot")[0];
 
 // buttons to fade in when we scroll to them
@@ -30,6 +30,9 @@ var footIcons = document.getElementsByClassName("footicons")[0];
 
 // loading page animations
 var loadingPage = document.getElementById("loadingpage");
+
+// nav button auto detect which page section
+var navButtons = document.getElementsByClassName("menu2")[0].children;
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -92,6 +95,11 @@ window.onload = async function() {
     otherHomeAbout.style.display = "";
     footer.style.display = "";
 
+    console.log("Portfolio Y: " + portTitle.offsetTop);
+    console.log("Workflow Y: " + homeAbout.offsetTop);
+    console.log("About Y: " + otherHomeAbout.offsetTop);
+    console.log("Contact Y: " + footIcons.offsetTop);
+
 }
 function handleScroll(event) {
     if (window.scrollY > viewProjects.offsetTop) {
@@ -134,4 +142,25 @@ function handleScroll(event) {
             footIcons.classList.add("visible");
         }
     }
+
+    if (window.scrollY + window.innerHeight > portTitle.offsetTop + portTitle.clientHeight) {
+        if (window.scrollY < portTitle.offsetTop + portTitle.clientHeight) {
+            navButtons[0].style.color = "#4195F5";
+        } else navButtons[0].style.color = "";
+    } else navButtons[0].style.color = "";
+    if (window.scrollY + window.innerHeight > homeAbout.offsetTop + homeAbout.clientHeight) {
+        if (window.scrollY < homeAbout.offsetTop + homeAbout.clientHeight) {
+            navButtons[1].style.color = "#4195F5";
+        } else navButtons[1].style.color = "";
+    } else navButtons[1].style.color = "";
+    if (window.scrollY + window.innerHeight > otherHomeAbout.offsetTop + otherHomeAbout.clientHeight) {
+        if (window.scrollY < otherHomeAbout.offsetTop + otherHomeAbout.clientHeight) {
+            navButtons[2].style.color = "#4195F5";
+        } else navButtons[2].style.color = "";
+    } else navButtons[2].style.color = "";
+    if (window.scrollY + window.innerHeight > footIcons.offsetTop + footIcons.clientHeight) {
+        if (window.scrollY < footIcons.offsetTop + footIcons.clientHeight) {
+            navButtons[3].style.color = "#4195F5";
+        } else navButtons[3].style.color = "";
+    } else navButtons[3].style.color = "";
 }

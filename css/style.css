@@ -381,6 +381,15 @@ grid-auto-rows: 400px;
     color: rgba(0, 0, 0, 1);
 }
 
+#porsche-info {
+  opacity: 0;
+  transition: 1s;
+}
+
+#porsche-info:hover {
+  opacity: 1;
+}
+
 .portitem {
     text-align: center;
     opacity: 0;
