@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Steven Shirley - UI/UX Designer | Front-end Web Developer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:300,400|Montserrat:200,400" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- <div id="loadingpage">
+      <div id="loadingtext">
+        LOADING
+      </div>
+    </div>
+    <script type="text/javascript">
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        async function load() {
+            var loadingPage = document.getElementById("loadingpage");
+            var loadingText = document.getElementById("loadingtext");
+            loadingText.innerHTML = "LOADING";
+            while (loadingPage.style.display != "none") {
+                for (var i = 0; i < 3; i++) {
+                    loadingText.innerHTML += ".";
+                    await sleep(500);
+                }
+                loadingText.innerHTML = "LOADING";
+            }
+        }
+        load();
+    </script> -->
+
+    <header class="masterhead">
+
+      <nav class="menu1">
+          <a href="index.html" id="mainlogo" class=""><img class="logo" src="./images/my-logo.png"></a>
+      </nav>
+
+<nav class="menu2">
+  <a href="#homeporttitle" class="menuitem" style="color: #4195F5;">PORTFOLIO</a>
+  <a href="#homeabout1" class="menuitem">WORKFLOW</a>
+  <a href="#homeabout2" class="menuitem">ABOUT</a>
+  <a href="mailto:stevenrichardshirley@gmail.com" class="lastmenuitem">CONTACT</a>
+  </nav>
+
+  </header>
+
+  <section class="portitemhome">
+
+  <div class="portitemcont">
+
+<div class="portintroname">Tanner Harrington - Park Place Porsche Sales Experience Manager Website</div>
+
+<div class="portintrotitle">LOGO DESIGN | WIREFRAME DESIGN | WEB DEVELOPMENT</div>
+
+<div><a href="#homeporttitle" class="portviewworkbtn">READ PROJECT STUDY</a></div>
+
+</div>
+
+</section>
+
+<section class="masterfoot">
+
+  <div class="foottitle">Okay, let's create something great.</div>
+<div class="footpara">When you have a project that you want to get started, connect with me. I'm available for freelance work, and I'm eager to hear from you.</div>
+
+  <div class="footicons">
+
+    <a href="mailto:stevenrichardshirley@gmail.com"><img class="icon" src="./images/mail-white.png"></a>
+    <a href="mailto:stevenrichardshirley@gmail.com"><img class="icon-alt" src="./images/mail-blue.png"></a>
+      <a href=""><img class="icon" src="./images/behance-white.png"></a>
+      <a href=""><img class="icon-alt" src="./images/behance-blue.png"></a>
+        <a href="https://github.com/srsdevelopments"><img class="icon" src="./images/github-white.png"></a>
+        <a href="https://github.com/srsdevelopments"><img class="icon-alt" src="./images/github-blue.png"></a>
+          <a href="https://www.linkedin.com/in/stevenrichardshirley/"><img class="icon" src="./images/linkedin-white.png"></a>
+          <a href="https://www.linkedin.com/in/stevenrichardshirley/"><img class="icon-alt" id="lasticon" src="./images/linkedin-blue.png"></a>
+
+  </div>
+
+  <div class="copyrights">
+    © 2019 - STEVEN SHIRLEY - ALL RIGHTS RESERVED
+  </div>
+
+  </section>
+
+  <!-- <script src="./javascript/app.js"></script> -->
+
+  <script>
+  $('a[href*="#"]').click(function(event) {
+                  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                      var target = $(this.hash);
+                      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                      if (target.length) {
+                          event.preventDefault();
+                          $('html, body').animate({
+                          scrollTop: target.offset().top
+                          }, 1000);
+                      }
+                  }
+              });
+              </script>
+
+  </body>
+</html>

@@ -363,7 +363,7 @@ grid-auto-rows: 400px;
 }
 
 .portitem div {
-    background: rgba(0, 0, 0, 0.25);
+    /* background: rgba(0, 0, 0, 0.25); */
     position: relative;
     transition: background 1s, color 1s;
     color: rgba(0, 0, 0, 0.0);
@@ -808,14 +808,26 @@ font-size: 18px;
 }
 
 .icon {
-  margin-right: 15%;
   height: 30px;
   width: 30px;
 }
 
-.lasticon {
+.icon-alt {
+  opacity: 0;
+  transition: opacity 1s;
   height: 30px;
   width: 30px;
+  margin-right: 15%;
+  position: relative;
+  left: -35px;
+}
+
+.icon-alt:hover {
+    opacity: 1;
+}
+
+#lasticon.icon-alt {
+  margin-right: 0;
 }
 
 .copyrights {
@@ -843,14 +855,20 @@ font-size: 18px;
   }
 
   .icon {
-    margin-right: 12.5%;
     height: 35px;
     width: 35px;
   }
 
-  .lasticon {
-    height: 35px;
-    width: 35px;
+  .icon-alt {
+      height: 35px;
+      width: 35px;
+      margin-right: 12.5%;
+      position: relative;
+      left: -40px;
+  }
+
+  #lasticon.icon-alt {
+    margin-right: 0;
   }
 
   .copyrights {
@@ -938,12 +956,18 @@ font-size: 18px;
   .icon {
     height: 40px;
     width: 40px;
-    margin-right: 7.5%;
   }
 
-  .lasticon {
-    height: 40px;
-    width: 40px;
+  .icon-alt {
+      height: 40px;
+      width: 40px;
+      margin-right: 7.5%;
+      position: relative;
+      left: -43px;
+  }
+
+  #lasticon.icon-alt {
+    margin-right: 0;
   }
 
   .copyrights {
@@ -973,7 +997,7 @@ font-size: 18px;
     padding-top: 2.5%;
   }
 
-  .icon {
+  .icon-alt {
     margin-right: 7.5%;
   }
 
@@ -991,6 +1015,8 @@ color: #ffffff;
 font-size: 30px;
 padding-top: 10%;
 margin-bottom: 5%;
+padding-left: 5%;
+padding-right: 5%;
 }
 
 #skillstitle2 {
@@ -998,6 +1024,8 @@ text-align: center;
 color: #ffffff;
 font-size: 14px;
 padding-bottom: 10%;
+padding-left: 5%;
+padding-right: 5%;
 }
 
 #skillscontainer {
@@ -1007,6 +1035,8 @@ padding-bottom: 10%;
   grid-template-columns: auto;
   text-align: center;
   padding-bottom: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .skillitem {
@@ -1098,4 +1128,46 @@ font-size: 16px;
     color: #ffffff;
     font-size: 20px;
   }
+}
+
+/* PORT PROJECT STUDY SECTIONS */
+
+.portitemhome {
+  background-image: url("../images/porsche-portfolio-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  text-align: center;
+  display: table;
+  width: 100%;
+  color: #ffffff;
+}
+
+.portitemhome a {
+  color: white;
+}
+
+.portitemcont {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.portintroname {
+  font-family: 'Cormorant', serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.portintrotitle {
+  font-size: 14px;
+  margin-bottom: 5%;
+}
+
+.portviewworkbtn {
+  font-size: 18px;
+  border: solid #ffffff 2px;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  margin: 0;
 }
