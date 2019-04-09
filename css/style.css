@@ -350,10 +350,19 @@ grid-auto-rows: 400px;
   color: #ffffff;
 }
 
+#homeport a {
+  color: #000000;
+}
+
 .portitem {
     text-align: center;
     height: 100%;
     width: 100%;
+    color: #ffffff;
+}
+
+.portitem a {
+  color: #000000;
 }
 
 .portitem img {
@@ -372,7 +381,6 @@ grid-auto-rows: 400px;
     align-items: center;
     height: 400px;
     width: 100%;
-    text-shadow: 1px 1px 2px white, 1px 1px 1px blue;
     top: -400px;
 }
 

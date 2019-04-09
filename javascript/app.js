@@ -39,6 +39,7 @@ function sleep(ms) {
 }
 
 window.onload = async function() {
+
     portTitle.style.display = "none";
     portButtons.style.display = "none";
     homePort.style.display = "none";
@@ -55,12 +56,12 @@ window.onload = async function() {
         homeElements[i].style.opacity = 0;
     }
 
-    await sleep(1000);
     loadingPage.style.opacity = 0;
-
     await sleep(1000);
     loadingPage.style.display = "none";
-
+    navButtons[0].style.color = "";
+    navButtons[1].style.color = "";
+    navButtons[2].style.color = "";
     for (var i = 0; i < 3; i++) {
         homeElements[i].style.transition = "opacity 1s";
     }
@@ -94,12 +95,6 @@ window.onload = async function() {
     skills.style.display = "";
     otherHomeAbout.style.display = "";
     footer.style.display = "";
-
-    console.log("Portfolio Y: " + portTitle.offsetTop);
-    console.log("Workflow Y: " + homeAbout.offsetTop);
-    console.log("About Y: " + otherHomeAbout.offsetTop);
-    console.log("Contact Y: " + footIcons.offsetTop);
-
 }
 function handleScroll(event) {
     if (window.scrollY > viewProjects.offsetTop) {
@@ -144,23 +139,18 @@ function handleScroll(event) {
     }
 
     if (window.scrollY + window.innerHeight > portTitle.offsetTop + portTitle.clientHeight) {
-        if (window.scrollY < portTitle.offsetTop + portTitle.clientHeight) {
-            navButtons[0].style.color = "#4195F5";
-        } else navButtons[0].style.color = "";
-    } else navButtons[0].style.color = "";
+        navButtons[0].style.color = "#4195F5";
+        navButtons[1].style.color = "";
+        navButtons[2].style.color = "";
+    }
     if (window.scrollY + window.innerHeight > homeAbout.offsetTop + homeAbout.clientHeight) {
-        if (window.scrollY < homeAbout.offsetTop + homeAbout.clientHeight) {
-            navButtons[1].style.color = "#4195F5";
-        } else navButtons[1].style.color = "";
-    } else navButtons[1].style.color = "";
+        navButtons[0].style.color = "";
+        navButtons[1].style.color = "#4195F5";
+        navButtons[2].style.color = "";
+    }
     if (window.scrollY + window.innerHeight > otherHomeAbout.offsetTop + otherHomeAbout.clientHeight) {
-        if (window.scrollY < otherHomeAbout.offsetTop + otherHomeAbout.clientHeight) {
-            navButtons[2].style.color = "#4195F5";
-        } else navButtons[2].style.color = "";
-    } else navButtons[2].style.color = "";
-    if (window.scrollY + window.innerHeight > footIcons.offsetTop + footIcons.clientHeight) {
-        if (window.scrollY < footIcons.offsetTop + footIcons.clientHeight) {
-            navButtons[3].style.color = "#4195F5";
-        } else navButtons[3].style.color = "";
-    } else navButtons[3].style.color = "";
+        navButtons[0].style.color = "";
+        navButtons[1].style.color = "";
+        navButtons[2].style.color = "#4195F5";
+    }
 }
