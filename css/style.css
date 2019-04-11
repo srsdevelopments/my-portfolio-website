@@ -128,7 +128,7 @@ color: #4195F5;
   position: absolute;
   position: fixed;
   z-index: 1;
-  transition: linear .25s;
+  transition: opacity 1s, padding .5s, background-color .5s;
   padding-top: 5%;
 }
 
@@ -1117,19 +1117,19 @@ padding-right: 5%;
 
 @media (min-width: 600px) {
 #skillstitle1 {
-padding-top: 7.5%;
+padding-top: 5%;
 font-size: 32px;
 margin-bottom: 5%;
 }
 
 #skillstitle2 {
-padding-bottom: 7.5%;
+padding-bottom: 5%;
 font-size: 16px;
 }
 
   #skillscontainer {
     grid-template-columns: auto auto;
-    padding-bottom: 7.5%;
+    padding-bottom: 5%;
   }
 
   .logostext {
