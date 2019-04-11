@@ -10,7 +10,7 @@
   </head>
   <body>
 
-    <div id="loadingpage">
+    <!-- <div id="loadingpage">
       <div id="loadingtext">
         LOADING
       </div>
@@ -32,16 +32,16 @@
             }
         }
         load();
-    </script>
+    </script> -->
 
-    <header class="masterhead">
+    <header class="masterhead" style="opacity:0">
 
       <nav class="menu1">
           <a href="index.html" id="mainlogo" class=""><img class="logo" src="./images/my-logo.png"></a>
       </nav>
 
 <nav class="menu2">
-  <a href="#homeporttitle" class="menuitem">PORTFOLIO</a>
+  <a href="#portlink" class="menuitem">PORTFOLIO</a>
   <a href="#homequotebtn" class="menuitem">WORKFLOW</a>
   <a href="#logosend" class="menuitem">ABOUT</a>
   <a href="mailto:stevenrichardshirley@gmail.com" class="lastmenuitem">CONTACT</a>
@@ -51,13 +51,18 @@
 
   <section id="home">
 
+    <div style="z-index: -1; height: 100%; width: 100%; position: absolute">
+    <div style="height: 96%; width: 100%"></div>
+    <div id="portlink" style="height: 4%; width: 100%"></div>
+</div>
+
   <div id="homecont">
 
-<div id="introname">Steven Shirley</div>
+<div id="introname" style="opacity:0">Steven Shirley</div>
 
-<div id="introtitle">DIGITAL DESIGNER | FRONT-END DEVELOPER</div>
+<div id="introtitle" style="opacity:0">DIGITAL DESIGNER | FRONT-END DEVELOPER</div>
 
-<div><a href="#homeporttitle" id="viewworkbtn">VIEW PROJECT GALLERY</a></div>
+<div style="opacity:0"><a href="#portlink" id="viewworkbtn">VIEW PROJECT GALLERY</a></div>
 
 </div>
 
@@ -209,11 +214,11 @@
     <div class="textbg2">
 
       <div class="hahead">
-        I've been making creative experiences for years, in multiple fields.
+        I've been creating for years, in multiple fields.
       </div>
 
       <div class="hapara" id="hapara2">
-        I have nearly ten years of experience in the overall design area, two in front-end development, and four as a performing musician. No matter the field, the knowledge I learned in each one can be applied interchangeably.  When I'm not crushing code or pushing pixels, you'll find me drumming, illustrating, or embarking on an adventure.
+        I have nearly ten years of experience in the overall design area, two in front-end development, and four as a performing musician. No matter the field, the knowledge I learn in each can be applied interchangeably. When I'm not crushing code or pushing pixels, you'll find me drumming, illustrating, or embarking on an adventure.
         </div>
 
         <div id="hbtncont">

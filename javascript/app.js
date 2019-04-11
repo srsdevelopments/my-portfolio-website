@@ -28,9 +28,6 @@ var skillItems = document.getElementsByClassName("skillitem");
 var viewResume = document.getElementById("resumebtn");
 var footIcons = document.getElementsByClassName("footicons")[0];
 
-// loading page animations
-var loadingPage = document.getElementById("loadingpage");
-
 // nav button auto detect which page section
 var navButtons = document.getElementsByClassName("menu2")[0].children;
 
@@ -40,28 +37,10 @@ function sleep(ms) {
 
 window.onload = async function() {
 
-    portTitle.style.display = "none";
-    portButtons.style.display = "none";
-    homePort.style.display = "none";
-    homeQuote.style.display = "none";
-    homeAbout.style.display = "none";
-    skillTitle.style.display = "none";
-    skillSubTitle.style.display = "none";
-    skills.style.display = "none";
-    otherHomeAbout.style.display = "none";
-    footer.style.display = "none";
-
-    navBar.style.opacity = 0;
-    for (var i = 0; i < 3; i++) {
-        homeElements[i].style.opacity = 0;
-    }
-
-    loadingPage.style.opacity = 0;
-    await sleep(1000);
-    loadingPage.style.display = "none";
     navButtons[0].style.color = "";
     navButtons[1].style.color = "";
     navButtons[2].style.color = "";
+
     for (var i = 0; i < 3; i++) {
         homeElements[i].style.transition = "opacity 1s";
     }
@@ -73,28 +52,6 @@ window.onload = async function() {
         await sleep(500);
     }
 
-    for (var i = 0; i < portItems.length; i++) {
-        portItems[i].classList.remove("visible");
-    }
-    sendMessage.classList.remove("visible");
-    for (var i = 0; i < skillItems.length; i++) {
-        skillItems[i].classList.remove("visible");
-    }
-    viewResume.classList.remove("visible");
-    for (var i = 0; i < footIcons.children.length; i++) {
-        footIcons.classList.remove("visible");
-    }
-
-    portTitle.style.display = "";
-    portButtons.style.display = "";
-    homePort.style.display = "";
-    homeQuote.style.display = "";
-    homeAbout.style.display = "";
-    skillTitle.style.display = "";
-    skillSubTitle.style.display = "";
-    skills.style.display = "";
-    otherHomeAbout.style.display = "";
-    footer.style.display = "";
 }
 function handleScroll(event) {
     if (window.scrollY > viewProjects.offsetTop) {
@@ -138,17 +95,20 @@ function handleScroll(event) {
         }
     }
 
-    if (window.scrollY + window.innerHeight > portTitle.offsetTop + portTitle.clientHeight) {
+    if (window.scrollY + 120 >= portTitle.offsetTop) {
         navButtons[0].style.color = "#4195F5";
         navButtons[1].style.color = "";
         navButtons[2].style.color = "";
     }
-    if (window.scrollY + window.innerHeight > homeAbout.offsetTop + homeAbout.clientHeight) {
+    else {
+        navButtons[0].style.color = "";
+    }
+    if (window.scrollY + 120 >= homeAbout.offsetTop) {
         navButtons[0].style.color = "";
         navButtons[1].style.color = "#4195F5";
         navButtons[2].style.color = "";
     }
-    if (window.scrollY + window.innerHeight > otherHomeAbout.offsetTop + otherHomeAbout.clientHeight) {
+    if (window.scrollY + 120 >= otherHomeAbout.offsetTop) {
         navButtons[0].style.color = "";
         navButtons[1].style.color = "";
         navButtons[2].style.color = "#4195F5";

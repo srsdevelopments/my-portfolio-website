@@ -85,6 +85,15 @@ color: #4195F5;
     color: #4195F5;
 }
 
+.portviewworkbtn {
+  transition: background-color 1s, color 1s;
+}
+
+.portviewworkbtn:hover {
+  background-color: white;
+  color: #4195F5;
+}
+
 #readmorebtn, #resumebtn {
     transition: background-color 1s, color 1s, opacity 1s;
 }
@@ -119,109 +128,137 @@ color: #4195F5;
   position: absolute;
   position: fixed;
   z-index: 1;
-  transition: linear 0.25s;
-  padding-top: 1%;
-  grid-template-rows: 50px 30px;
+  transition: linear .25s;
+  padding-top: 5%;
 }
 
 .masterhead.scrolled {
   background: black;
-  padding-top: 0%;
+  padding-top: 2.5%;
 }
 
 
 .menu1 {
-    width: 100%;
-    max-width: 600px;
-    height: 100%;
     grid-column: 1;
     grid-row: 1;
 }
 
 .logo {
-    height: 40px;
-    margin-top: 5px;
-    width: 100%;
+  height: 24px;
+  width: 350px;
 }
 
 .menu2 {
     grid-column: 1;
     grid-row: 2;
-    font-size: 12px;
     font-weight: 200;
-    max-width: 600px;
 }
 
 .menuitem {
   margin-right: 30px;
+  font-size: 12px;
 }
 
-@media (min-width: 450px) {
-  .logo {
-    height: 50px;
-    margin-top: 0px;
-    width: 100%;
-  }
-}
-.menu2 {
-    grid-column: 1;
-    grid-row: 2;
-    font-size: 14px;
-    font-weight: 100;
-    max-width: 600px;
-}
-
-.menuitem {
-  margin-right: 30px;
+.lastmenuitem {
+  font-size: 12px;
 }
 
 @media (min-width: 600px) {
 .masterhead {
-  height: 50px;
-  grid-template-rows: 100%;
-  grid-template-columns: 50% 50%;
+  height: 120px;
+}
+
+.masterhead.scrolled {
+
+}
+
+.menu1 {
+  grid-column: 1;
+grid-row: 1;
+margin-bottom: 2.5%;
+}
+
+.logo {
+  height: 40px;
+  width: 695px;
+  grid-column: 1;
+grid-row: 1;
 }
 
   .menu2 {
-    grid-column: 2;
-    grid-row: 1;
-    font-size: 14px;
-    line-height: 50px;
-    margin-left: auto;
+    grid-column: 1;
+    grid-row: 2;
 }
 
 .menuitem {
-  margin-right: 14px;
+  margin-right: 125px;
+  font-size: 14px;
 }
 
 .lastmenuitem {
-  margin-right: 30px;
+  font-size: 14px;
 }
 
 }
 
 @media (min-width: 900px) {
+  .masterhead {
+    height: 80px;
+  }
+
+  .logo {
+    height: 34px;
+    width: 500px;
+  }
+
+  .menu1 {
+    grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 0%;
+  }
+
   .menu2 {
-    font-size: 16px;
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 1.25%;
   }
 
   .menuitem {
-margin-right: 20px;
+    margin-right: 25px;
+    font-size: 14px;
   }
 
   .lastmenuitem {
-    margin-right: 30px;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 1200px) {
+  .masterhead {
+    height: 55px;
+    padding-top: 2.5%;
+  }
+
+  .masterhead.scrolled {
+    padding-top: .5%;
+  }
+
+.logo {
+  height: 36px;
+  width: 525px;
+}
+
   .menu2 {
-    margin-top: .2%;
-    font-size: 16px;
+    margin-top: 1.225%;
   }
 
   .menuitem {
 margin-right: 50px;
+font-size: 16px;
+  }
+
+  .lastmenuitem {
+    font-size: 16px;
   }
 }
 
@@ -269,7 +306,7 @@ margin-bottom: 5%;
 
 @media (min-width: 600px) {
   #introname {
-font-size: 52px;
+font-size: 44px;
   }
 
   #introtitle {
@@ -284,32 +321,32 @@ margin-bottom: 3.5%;
 
 @media (min-width: 900px) {
   #introname {
-font-size: 54px;
+font-size: 44px;
   }
 
   #introtitle {
-font-size: 18px;
+font-size: 16px;
 margin-bottom: 2.5%;
   }
 
   #viewworkbtn {
-font-size: 28px;
+font-size: 26px;
   }
 }
 
 @media (min-width: 1200px) {
 
   #introname {
-font-size: 56px;
+font-size: 46px;
   }
 
   #introtitle {
 font-size: 20px;
-margin-bottom: 2%;
+margin-bottom: 1.5%;
   }
 
   #viewworkbtn {
-font-size: 30px;
+font-size: 28px;
   }
 }
 
@@ -1187,4 +1224,210 @@ font-size: 16px;
   border-radius: 5px;
   padding: 5px 5px 5px 5px;
   margin: 0;
+}
+
+.itemdes {
+  background: #000000;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+  color: #ffffff;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.itemtitle {
+  font-size: 30px;
+  font-family: 'Cormorant', serif;
+  margin-bottom: 5%;
+}
+
+.itempara {
+  font-size: 16px;
+}
+
+@media (min-width: 600px) {
+  .portitemhome {
+    background-image: url("../images/porsche-portfolio-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    text-align: center;
+    display: table;
+    width: 100%;
+    color: #ffffff;
+  }
+
+  .portitemhome a {
+    color: white;
+  }
+
+  .portitemcont {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .portintroname {
+    font-family: 'Cormorant', serif;
+    font-weight: 700;
+    font-size: 44px;
+  }
+
+  .portintrotitle {
+    font-size: 16px;
+    margin-bottom: 3.5%;
+  }
+
+  .portviewworkbtn {
+    font-size: 26px;
+    border: solid #ffffff 2px;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    margin: 0;
+  }
+
+  .itemdes {
+    background: #000000;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    color: #ffffff;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .itemtitle {
+    font-size: 32px;
+    font-family: 'Cormorant', serif;
+    margin-bottom: 5%;
+  }
+
+  .itempara {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 900px) {
+  .portitemhome {
+    background-image: url("../images/porsche-portfolio-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    text-align: center;
+    display: table;
+    width: 100%;
+    color: #ffffff;
+  }
+
+  .portitemhome a {
+    color: white;
+  }
+
+  .portitemcont {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .portintroname {
+    font-family: 'Cormorant', serif;
+    font-weight: 700;
+    font-size: 44px;
+  }
+
+  .portintrotitle {
+    font-size: 16px;
+    margin-bottom: 2.5%;
+  }
+
+  .portviewworkbtn {
+    font-size: 26px;
+    border: solid #ffffff 2px;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    margin: 0;
+  }
+
+  .itemdes {
+    background: #000000;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    color: #ffffff;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .itemtitle {
+    font-size: 32px;
+    font-family: 'Cormorant', serif;
+    margin-bottom: 2.5%;
+  }
+
+  .itempara {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portitemhome {
+    background-image: url("../images/porsche-portfolio-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    text-align: center;
+    display: table;
+    width: 100%;
+    color: #ffffff;
+  }
+
+  .portitemhome a {
+    color: white;
+  }
+
+  .portitemcont {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .portintroname {
+    font-family: 'Cormorant', serif;
+    font-weight: 700;
+    font-size: 46px;
+  }
+
+  .portintrotitle {
+    font-size: 20px;
+    margin-bottom: 1.5%;
+  }
+
+  .portviewworkbtn {
+    font-size: 28px;
+    border: solid #ffffff 2px;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    margin: 0;
+  }
+
+  .itemdes {
+    background: #000000;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    text-align: center;
+    color: #ffffff;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .itemtitle {
+    font-size: 34px;
+    font-family: 'Cormorant', serif;
+    margin-bottom: 2.5%;
+  }
+
+  .itempara {
+    font-size: 20px;
+  }
 }
