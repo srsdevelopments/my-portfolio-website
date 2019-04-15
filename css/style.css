@@ -640,13 +640,22 @@ margin-bottom: 5%;
 }
 
 .photobanner {
-  background-image: url("../images/forest.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
 display: grid;
 height: 100%;
 width: 100%;
 grid-template-columns: 50% 50%;
+}
+
+#workflowbanner {
+  background-image: url("../images/forest.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#aboutbanner {
+  background-image: url("../images/forest.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .transparentbg {
@@ -655,7 +664,7 @@ grid-template-columns: 50% 50%;
 
 .textbg {
     grid-column: 1 / span 2;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
     padding-top: 10%;
     padding-bottom: 10%;
     text-align: center;
@@ -698,7 +707,7 @@ opacity: 1;
 
 .textbg2 {
     grid-column: 1 / span 2;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
     padding-top: 10%;
     padding-bottom: 10%;
     text-align: center;
@@ -922,61 +931,6 @@ font-size: 18px;
 }
 
 @media (min-width: 900px) {
-  /* .masterfoot {
-    display: grid;
-    grid-template-rows: 64px auto auto;
-    grid-template-columns: 50% 50%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-
-  .foottitle {
-    grid-row: 1;
-    grid-column: 1 / span 2;
-    font-size: 32px;
-    padding-bottom: 0%;
-  }
-
-  .footpara {
-    grid-row: 2;
-    grid-column: 1;
-    border-bottom: none;
-    border-right: solid #ffffff 1px;
-    display: inline-block;
-    font-size: 18px;
-    padding-bottom: 5%;
-    padding-right: 5%;
-    width: 100%;
-    padding-top: 5%;
-    text-align: left;
-  }
-
-  .footicons {
-      grid-row: 2;
-      grid-column: 2;
-      border-top: none;
-      border-left: solid #ffffff 1px;
-      display: inline-flex;
-      grid-template-columns: 50% 50%;
-      padding: 8% 5% 0% 15%;
-      width: 100%;
-  }
-
-  .copyrights {
-    grid-row: 3;
-    grid-column: 1 / span 2;
-    padding-top: 5%;
-  }
-
-  .icon {
-    height: 40px;
-    width: 40px;
-  }
-
-  .lasticon {
-    height: 40px;
-    width: 40px;
-  } */
 
   .masterfoot {
     padding-top: 5%;
@@ -1168,14 +1122,23 @@ font-size: 16px;
 /* PORT PROJECT STUDY SECTIONS */
 
 .portitemhome {
-  background-image: url("../images/porsche-portfolio-img.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100%;
   text-align: center;
   display: table;
   width: 100%;
   color: #ffffff;
+}
+
+#portporschebg {
+  background-image: url("../images/car-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#portwellingtonbg {
+  background-image: url("../images/bridge-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .portitemhome a {
@@ -1227,11 +1190,87 @@ font-size: 16px;
   font-size: 16px;
 }
 
+.solvingcont {
+margin-top: 10%;
+display: grid;
+}
+
+.problemsimg {
+  height: 350px;
+  width: 350px;
+  margin-bottom: 10%;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.solutionsimg {
+  grid-column: 1;
+  grid-row: 2;
+  height: 350px;
+  width: 350px;
+}
+
+.itemscreens {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.itemscreen {
+  margin-bottom: 10%;
+}
+
+.itemscreen7 {
+  margin-bottom: 10%;
+}
+
+.itemscreen8 {
+  margin-bottom: 10%;
+}
+
+.phoneimage {
+height: 275px;
+width: 145px;
+}
+
+.macimage {
+height: 275px;
+width: 350px;
+}
+
+.padimage {
+height: 275px;
+width: 195px;
+}
+
+#porschebanner1 {
+  background-image: url("../images/porsche-ribbon-2-lg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#porschebanner2 {
+  background-image: url("../images/porsche-ribbon-lg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#wellingtonbanner1 {
+  background-image: url("../images/wellington-ribbon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#wellingtonbanner2 {
+  background-image: url("../images/wellington-ribbon2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 600px) {
   .portitemhome {
-    background-image: url("../images/porsche-portfolio-img.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 100%;
     text-align: center;
     display: table;
@@ -1287,13 +1326,52 @@ font-size: 16px;
   .itempara {
     font-size: 18px;
   }
+
+  .solvingcont {
+  margin-top: 5%;
+  display: grid;
+  text-align: center;
+  }
+
+  .problemsimg {
+    height: 700px;
+    width: 700px;
+    margin-bottom: 10%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .solutionsimg {
+    grid-column: 1;
+    grid-row: 2;
+    height: 600px;
+    width: 600px;
+  }
+
+  .itemscreens {
+    grid-template-columns: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .phoneimage {
+  height: 450px;
+  width: 250px;
+  }
+
+  .macimage {
+  height: 450px;
+  width: 550px;
+  }
+
+  .padimage {
+  height: 450px;
+  width: 350px;
+  }
 }
 
 @media (min-width: 900px) {
   .portitemhome {
-    background-image: url("../images/porsche-portfolio-img.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 100%;
     text-align: center;
     display: table;
@@ -1349,13 +1427,60 @@ font-size: 16px;
   .itempara {
     font-size: 18px;
   }
+
+  .solvingcont {
+  margin-top: 5%;
+  display: grid;
+  grid-column-gap: 5%;
+  }
+
+  .problemsimg {
+    height: 450px;
+    width: 450px;
+    margin-bottom: 0%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .solutionsimg {
+    grid-column: 2;
+    grid-row: 1;
+    height: 450px;
+    width: 450px;
+  }
+
+  .itemscreens {
+    grid-template-columns: auto auto auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .itemscreen7 {
+    margin-bottom: 0%;
+  }
+
+  .itemscreen8 {
+    margin-bottom: 0%;
+  }
+
+  .phoneimage {
+height: 350px;
+width: 180px;
+  }
+
+  .macimage {
+height: 350px;
+width: 450px;
+  }
+
+  .padimage {
+height: 350px;
+width: 250px;
+  }
 }
 
 @media (min-width: 1200px) {
   .portitemhome {
-    background-image: url("../images/porsche-portfolio-img.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 100%;
     text-align: center;
     display: table;
@@ -1410,5 +1535,46 @@ font-size: 16px;
 
   .itempara {
     font-size: 20px;
+  }
+
+  .solvingcont {
+  margin-top: 2.5%;
+  display: grid;
+  }
+
+  .problemsimg {
+    height: 575px;
+    width: 575px;
+    margin-bottom: 0%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .solutionsimg {
+    grid-column: 2;
+    grid-row: 1;
+    height: 575px;
+    width: 575px;
+  }
+
+  .itemscreens {
+    grid-template-columns: auto auto auto;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+
+  .phoneimage {
+height: 450px;
+width: 250px;
+  }
+
+  .macimage {
+height: 450px;
+width: 550px;
+  }
+
+  .padimage {
+height: 450px;
+width: 350px;
   }
 }
