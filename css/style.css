@@ -1123,6 +1123,23 @@ font-size: 16px;
 
 /* PORT PROJECT STUDY SECTIONS */
 
+.problemsimg,
+.solutionsimg,
+.phoneimage,
+.macimage,
+.padimage {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.problemsimg.visible,
+.solutionsimg.visible,
+.phoneimage.visible,
+.macimage.visible,
+.padimage.visible {
+    opacity: 1;
+}
+
 .portitemhome {
   height: 100%;
   text-align: center;

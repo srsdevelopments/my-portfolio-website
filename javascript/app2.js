@@ -12,6 +12,13 @@ var homeElements = homePage.children;
 var viewProjects = document.getElementsByClassName("portintrotitle")[0];
 var footIcons = document.getElementsByClassName("footicons")[0];
 
+// images to fade in on scroll
+var phoneImages = document.getElementsByClassName("phoneimage");
+var macImages = document.getElementsByClassName("macimage");
+var padImages = document.getElementsByClassName("padimage");
+var problemImage = document.getElementsByClassName("problemsimg")[0];
+var solutionImage = document.getElementsByClassName("solutionsimg")[0];
+
 function handleScroll(event) {
     if (window.scrollY > viewProjects.offsetTop) {
         navBar.classList.add("scrolled");
@@ -33,6 +40,33 @@ function handleScroll(event) {
             footIcons.classList.add("visible");
         }
     }
+
+    for (var i = 0; i < phoneImages.length; i++) {
+        if (window.scrollY + window.innerHeight > phoneImages[i].offsetTop + phoneImages[i].clientHeight / 4) {
+            phoneImages[i].classList.add("visible");
+        }
+    }
+
+    for (var i = 0; i < macImages.length; i++) {
+        if (window.scrollY + window.innerHeight > macImages[i].offsetTop + macImages[i].clientHeight / 4) {
+            macImages[i].classList.add("visible");
+        }
+    }
+
+    for (var i = 0; i < padImages.length; i++) {
+        if (window.scrollY + window.innerHeight > padImages[i].offsetTop + padImages[i].clientHeight / 4) {
+            padImages[i].classList.add("visible");
+        }
+    }
+
+    if (window.scrollY + window.innerHeight > problemImage.offsetTop + problemImage.clientHeight / 4) {
+        problemImage.classList.add("visible");
+    }
+
+    if (window.scrollY + window.innerHeight > solutionImage.offsetTop + solutionImage.clientHeight / 4) {
+        solutionImage.classList.add("visible");
+    }
+
 }
 
 window.onload = function() {
