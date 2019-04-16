@@ -64,7 +64,7 @@ a:hover {
 }
 
 .menu2 a:hover {
-color: #4195F5;
+color: #4195F5 !important;
 }
 
 #viewworkbtn, #homequotebtn {
@@ -288,7 +288,8 @@ font-size: 16px;
 #introname {
   font-family: 'Cormorant', serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 38px;
+  margin-bottom: 1%;
 }
 
 #introtitle {
@@ -297,7 +298,7 @@ margin-bottom: 5%;
 }
 
 #viewworkbtn {
-  font-size: 18px;
+  font-size: 20px;
   border: solid #ffffff 2px;
   border-radius: 5px;
   padding: 5px 5px 5px 5px;
@@ -306,47 +307,48 @@ margin-bottom: 5%;
 
 @media (min-width: 600px) {
   #introname {
-font-size: 44px;
+font-size: 40px;
+margin-bottom: .5%;
   }
 
   #introtitle {
 font-size: 16px;
-margin-bottom: 3.5%;
+margin-bottom: 3%;
   }
 
   #viewworkbtn {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 
 @media (min-width: 900px) {
   #introname {
-font-size: 44px;
+font-size: 40px;
   }
 
   #introtitle {
 font-size: 16px;
-margin-bottom: 2.5%;
+margin-bottom: 2.25%;
   }
 
   #viewworkbtn {
-font-size: 26px;
+font-size: 22px;
   }
 }
 
 @media (min-width: 1200px) {
 
   #introname {
-font-size: 46px;
+font-size: 42px;
   }
 
   #introtitle {
-font-size: 20px;
-margin-bottom: 1.5%;
+font-size: 18px;
+margin-bottom: 1.85%;
   }
 
   #viewworkbtn {
-font-size: 28px;
+font-size: 24px;
   }
 }
 
@@ -492,7 +494,7 @@ grid-auto-rows: 400px;
   }
 
   #homeportbtns {
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 2.5%;
   }
 }
@@ -1105,7 +1107,7 @@ font-size: 16px;
 
   #skillstitle2 {
   padding-bottom: 2.5%;
-  font-size: 20px;
+  font-size: 18px;
   }
 
   #skillscontainer {
@@ -1154,7 +1156,8 @@ font-size: 16px;
 .portintroname {
   font-family: 'Cormorant', serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
+  margin-bottom: 2.5%;
 }
 
 .portintrotitle {
@@ -1163,7 +1166,7 @@ font-size: 16px;
 }
 
 .portviewworkbtn {
-  font-size: 18px;
+  font-size: 16px;
   border: solid #ffffff 2px;
   border-radius: 5px;
   padding: 5px 5px 5px 5px;
@@ -1291,16 +1294,16 @@ width: 195px;
   .portintroname {
     font-family: 'Cormorant', serif;
     font-weight: 700;
-    font-size: 44px;
+    font-size: 32px;
   }
 
   .portintrotitle {
     font-size: 16px;
-    margin-bottom: 3.5%;
+    margin-bottom: 4.25%;
   }
 
   .portviewworkbtn {
-    font-size: 26px;
+    font-size: 18px;
     border: solid #ffffff 2px;
     border-radius: 5px;
     padding: 5px 5px 5px 5px;
@@ -1392,7 +1395,8 @@ width: 195px;
   .portintroname {
     font-family: 'Cormorant', serif;
     font-weight: 700;
-    font-size: 44px;
+    font-size: 32px;
+    margin-bottom: 1%;
   }
 
   .portintrotitle {
@@ -1401,7 +1405,7 @@ width: 195px;
   }
 
   .portviewworkbtn {
-    font-size: 26px;
+    font-size: 18px;
     border: solid #ffffff 2px;
     border-radius: 5px;
     padding: 5px 5px 5px 5px;
@@ -1501,16 +1505,16 @@ width: 250px;
   .portintroname {
     font-family: 'Cormorant', serif;
     font-weight: 700;
-    font-size: 46px;
+    font-size: 34px;
   }
 
   .portintrotitle {
-    font-size: 20px;
-    margin-bottom: 1.5%;
+    font-size: 18px;
+    margin-bottom: 2%;
   }
 
   .portviewworkbtn {
-    font-size: 28px;
+    font-size: 20px;
     border: solid #ffffff 2px;
     border-radius: 5px;
     padding: 5px 5px 5px 5px;

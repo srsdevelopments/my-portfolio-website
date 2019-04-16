@@ -8,19 +8,19 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant:300,400|Montserrat:200,400" rel="stylesheet">
   </head>
-  <body>
+  <body style="opacity: 0; transition: opacity 1s">
 
     <header class="masterhead">
 
       <nav class="menu1">
-          <a href="index.html" id="mainlogo" class=""><img class="logo" src="./images/my-logo.png"></a>
+          <a style="cursor: pointer" onclick="visitLink('./index.html')" id="mainlogo" class=""><img class="logo" src="./images/my-logo.png"></a>
       </nav>
 
 <nav class="menu2">
-  <a href="./index.html#portlink" class="menuitem" style="color: #4195F5;">PORTFOLIO</a>
-  <a href="./index.html#homequotebtn" class="menuitem">WORKFLOW</a>
-  <a href="./index.html#logosend" class="menuitem">ABOUT</a>
-  <a href="mailto:stevenrichardshirley@gmail.com" class="lastmenuitem">CONTACT</a>
+  <a style="cursor: pointer" onclick="visitLink('./index.html#portlink')" class="menuitem">PORTFOLIO</a>
+  <a style="cursor: pointer" onclick="visitLink('./index.html#homequotebtn')" class="menuitem">WORKFLOW</a>
+  <a style="cursor: pointer" onclick="visitLink('./index.html#logosend')" class="menuitem">ABOUT</a>
+  <a style="cursor: pointer" href="mailto:stevenrichardshirley@gmail.com" class="lastmenuitem">CONTACT</a>
   </nav>
 
   </header>
@@ -126,19 +126,19 @@ Problems Creatively Solved
 
   <div class="footicons">
 
-    <a href="mailto:stevenrichardshirley@gmail.com">
+    <a style="cursor: pointer" href="mailto:stevenrichardshirley@gmail.com">
         <img class="icon" src="./images/mail-white.png">
         <img class="icon-alt" src="./images/mail-blue.png">
     </a>
-    <a href="">
+    <a style="cursor: pointer" onclick="visitLink('./index.html')">
         <img class="icon" src="./images/behance-white.png">
         <img class="icon-alt" src="./images/behance-blue.png">
     </a>
-    <a href="https://github.com/srsdevelopments">
+    <a style="cursor: pointer" onclick="visitLink('https://github.com/srsdevelopments')">
         <img class="icon" src="./images/github-white.png">
         <img class="icon-alt" src="./images/github-blue.png">
     </a>
-    <a href="https://www.linkedin.com/in/stevenrichardshirley/">
+    <a style="cursor: pointer" onclick="visitLink('https://www.linkedin.com/in/stevenrichardshirley/')">
         <img class="icon" src="./images/linkedin-white.png">
         <img class="icon-alt" src="./images/linkedin-blue.png">
     </a>
@@ -158,8 +158,6 @@ Problems Creatively Solved
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-
-  <script src="./javascript/smooth.js"></script>
 
   <script>
   $('a[href*="#"]').click(function(event) {

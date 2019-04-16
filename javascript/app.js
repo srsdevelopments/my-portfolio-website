@@ -37,6 +37,10 @@ function sleep(ms) {
 
 window.onload = async function() {
 
+  document.body.style.opacity = 1;
+
+  sleep(1000);
+
     navButtons[0].style.color = "";
     navButtons[1].style.color = "";
     navButtons[2].style.color = "";
@@ -113,4 +117,9 @@ function handleScroll(event) {
         navButtons[1].style.color = "";
         navButtons[2].style.color = "#4195F5";
     }
+}
+
+function visitLink(location) {
+    document.body.style.opacity = 0;
+    setTimeout(function(){ window.location = location; }, 1000);
 }

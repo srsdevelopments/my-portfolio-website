@@ -34,3 +34,12 @@ function handleScroll(event) {
         }
     }
 }
+
+window.onload = function() {
+    document.body.style.opacity = 1;
+}
+
+function visitLink(location) {
+    document.body.style.opacity = 0;
+    setTimeout(function(){ window.location = location; }, 1000);
+}
