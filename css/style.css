@@ -265,7 +265,7 @@ font-size: 16px;
 /* HOME SECTION */
 
 #home {
-  background-image: url("../images/waterwoods-edit.jpeg");
+  background-image: url("../images/landing-steven-iphone.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -306,6 +306,11 @@ margin-bottom: 5%;
 }
 
 @media (min-width: 600px) {
+
+  #home {
+    background-image: url("../images/landing-steven-ipad.jpg");
+  }
+
   #introname {
 font-size: 40px;
 margin-bottom: .5%;
@@ -322,6 +327,12 @@ margin-bottom: 3%;
 }
 
 @media (min-width: 900px) {
+
+  #homecont {
+    padding-left: 7.5%;
+    text-align: left;
+  }
+
   #introname {
 font-size: 40px;
   }
@@ -337,6 +348,10 @@ font-size: 22px;
 }
 
 @media (min-width: 1200px) {
+
+  #home {
+    background-image: url("../images/landing-steven-1.jpg");
+  }
 
   #introname {
 font-size: 42px;
@@ -649,13 +664,13 @@ grid-template-columns: 50% 50%;
 }
 
 #workflowbanner {
-  background-image: url("../images/forest.jpeg");
+  background-image: url("../images/forest-ribbon-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #aboutbanner {
-  background-image: url("../images/forest.jpeg");
+  background-image: url("../images/forest-ribbon.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
