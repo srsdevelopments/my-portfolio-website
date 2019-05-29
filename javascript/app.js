@@ -39,7 +39,7 @@ window.onload = async function() {
 
   document.body.style.opacity = 1;
 
-  sleep(1000);
+  await sleep(1000);
 
     navButtons[0].style.color = "";
     navButtons[1].style.color = "";
