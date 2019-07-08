@@ -19,6 +19,9 @@ var padImages = document.getElementsByClassName("padimage");
 var problemImage = document.getElementsByClassName("problemsimg")[0];
 var solutionImage = document.getElementsByClassName("solutionsimg")[0];
 
+// resume button class used as additional buttons
+var viewResume = document.getElementsByClassName("resumebtn");
+
 function handleScroll(event) {
     if (window.scrollY > viewProjects.offsetTop) {
         navBar.classList.add("scrolled");
@@ -33,6 +36,12 @@ function handleScroll(event) {
 
         var offset = (3 / 4) * window.scrollY;
         homePage.style.paddingTop = offset + "px";
+    }
+
+    for (var i = 0; i < viewResume.length; i++) {
+        if (window.scrollY + window.innerHeight > viewResume[i].offsetTop + viewResume[i].clientHeight / 4) {
+            viewResume[i].classList.add("visible");
+        }
     }
 
     for (var i = 0; i < footIcons.children.length; i++) {

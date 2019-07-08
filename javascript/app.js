@@ -25,7 +25,7 @@ var viewProjects = document.getElementById("introname");
 var portItems = document.getElementsByClassName("portitem");
 var sendMessage = document.getElementById("homequotebtn");
 var skillItems = document.getElementsByClassName("skillitem");
-var viewResume = document.getElementById("resumebtn");
+var viewResume = document.getElementsByClassName("resumebtn")[0];
 var footIcons = document.getElementsByClassName("footicons")[0];
 
 // nav button auto detect which page section

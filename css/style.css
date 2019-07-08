@@ -98,21 +98,21 @@ color: #4195F5 !important;
   color: #4195F5;
 }
 
-#readmorebtn, #resumebtn {
+#readmorebtn, .resumebtn {
     transition: background-color 1s, color 1s, opacity 1s;
 }
 
-#readmorebtn:hover, #resumebtn:hover {
+#readmorebtn:hover, .resumebtn:hover {
   background-color: black;
   color: #4195F5;
 }
 
-#readmorebtn a, #resumebtn a {
+#readmorebtn a, .resumebtn a {
     color: black;
     transition: color 1s;
 }
 
-#readmorebtn:hover a, #resumebtn:hover a {
+#readmorebtn:hover a, .resumebtn:hover a {
     color: #4195F5;
 }
 
@@ -709,12 +709,12 @@ font-size: 16px;
   margin-bottom: 5%;
 }
 
-#hbtncont {
+.hbtncont {
   font-family: 'Montserrat', sans-serif;
   display: grid;
 }
 
- #resumebtn {
+ .resumebtn {
 font-size: 16px;
 border: solid #000000 2px;
 border-radius: 5px;
@@ -723,7 +723,7 @@ grid-row: 2;
 opacity: 0;
 }
 
- #resumebtn.visible {
+ .resumebtn.visible {
 opacity: 1;
 }
 
@@ -761,11 +761,11 @@ opacity: 1;
     font-size: 18px;
   }
 
-  #hbtncont {
+  .hbtncont {
     text-align: center;
   }
 
-   #resumebtn {
+   .resumebtn {
     grid-row: 1;
     grid-column: 1;
   font-size: 18px;
@@ -809,7 +809,7 @@ font-size: 18px;
   }
 
 
-   #resumebtn {
+   .resumebtn {
     font-size: 18px;
   }
 
@@ -841,7 +841,7 @@ font-size: 18px;
     }
 
 
-     #resumebtn {
+     .resumebtn {
     font-size: 20px;
     }
 }
