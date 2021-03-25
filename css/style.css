@@ -381,6 +381,7 @@ display: grid;
 background: #000000;
 grid-template-columns: auto;
 grid-auto-rows: 400px;
+overflow:hidden;
 }
 
 #homeporttitle {
@@ -1618,4 +1619,8 @@ width: 550px;
 height: 450px;
 width: 350px;
   }
+}
+
+#testimonials-id {
+  background: #000000;
 }
