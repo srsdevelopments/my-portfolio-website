@@ -670,13 +670,13 @@ grid-template-columns: 50% 50%;
 }
 
 #workflowbanner {
-  background-image: url("../images/forest-ribbon-2.jpg");
+  background-image: url("../images/laptop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #aboutbanner {
-  background-image: url("../images/forest-ribbon.jpg");
+  background-image: url("../images/guitar.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
